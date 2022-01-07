@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="394dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="5dp"
+            android:layout_span="2"
+            android:maxWidth="350dp"
+            android:textAlignment="center" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Filmler..."
+            android:layout_span="2"/>
+    </TableRow>
+    <TableRow>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:text="İlk Resim"
+            android:onClick="ilk_resim"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Son Resim"
+            android:onClick="son_resim"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sonraki Resim"
+            android:onClick="sonraki_resim"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Önceki Resim"
+            android:onClick="önceki_resim"/>
+    </TableRow>
+    <TableRow>
+
+    </TableRow>
+    <TableRow>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/editTextText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Süre"
+            android:text="1"/>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Başlat"
+            android:onClick="timer_baslat"/>
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Durdur"
+            android:onClick="timer_durdur"/>
+    </TableRow>
+
+
+</TableLayout>
